@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Covid-19 live data tracker</title>
+  </head>
+
+  <!-- <body onload="initFetch()"> -->
+  <body class="bg-danger">
+    <div class="container d-flex justify-content-center rounded">
+      <div class="card p-3 bg-dark">
+        <div class="card-title text-center">
+          <h2 class="text-capitalize text-primary">
+            <span class="text-danger fst-italic">Covid-19</span> Live Status
+            Tracker
+          </h2>
+
+          <hr class="text-white" />
+          <div class="card-body">
+            <div id="form">
+              <div class="mb-3">
+                <!-- <label for="select" class="fw-bold text-uppercase"
+                  >Select the Country:</label
+                >
+                <select class="mb-3 text-uppercase form-control" id="select">
+                  <option value="Global">Global</option>
+                  <option value="India">India</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="China">China</option>
+                  <option value="Pakistan">Pakistan</option>
+                </select> -->
+                <label
+                  for="select"
+                  class="fst-italic fw-bold text-capitalize text-white"
+                  >Enter the Country Name:</label
+                >
+                <input
+                  type="text"
+                  id="select"
+                  class="mb-3 form control"
+                  required
+                />
+                <button
+                  type="submit"
+                  id="submit"
+                  class="btn btn-outline-primary mb-3 form-control rounded-pill"
+                >
+                  View Status Here!
+                </button>
+
+                <h1 id="stat" class="fs-4 text text-white">Global</h1>
+                <table class="table table-striped table-hover table-borderless">
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="text-white">1</th>
+                      <td class="data text-info fw-bold">New Recovered</td>
+
+                      <td class="data-value text-white" id="N-rec">0</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-white">2</th>
+                      <td class="data text-success fw-bold">Total Recovered</td>
+
+                      <td class="data-value text-white" id="T-rec">0</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-white">3</th>
+                      <td class="data text-warning fw-bold">
+                        New Confirmed Case
+                      </td>
+
+                      <td class="data-value text-white" id="N-conf">0</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-white">4</th>
+                      <td class="data text-danger fw-bold">
+                        Total Confirmed Case
+                      </td>
+
+                      <td class="data-value text-white" id="T-conf">0</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-white">5</th>
+                      <td class="data text-warning fw-bold">New Death</td>
+
+                      <td class="data-value text-white" id="N-death">0</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-white">6</th>
+                      <td class="data text-danger fw-bold">Total Deaths</td>
+
+                      <td class="data-value text-white" id="T-death">0</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap js -->
+    <script src="assets/js/script.js"></script>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

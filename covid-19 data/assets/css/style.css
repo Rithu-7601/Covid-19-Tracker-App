@@ -1,0 +1,8 @@
+body {
+  background-color: #f02400;
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+}
+
+.container {
+  margin-top: 10vh;
+}
